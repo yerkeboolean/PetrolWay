@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/map_nav"
+            android:title="Карта" />
+        <item
+            android:id="@+id/profile_nav"
+            android:title="Личный кабинет" />
+        <item
+            android:id="@+id/petrol_nav"
+            android:title="Все АЗС" />
+        <item
+            android:id="@+id/faq_nav"
+            android:title="Частые вопросы" />
+        <item
+            android:id="@+id/call_center_nav"
+            android:title="Колл центр" />
+    </group>
+
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/call_center_nav"
+    app:startDestination="@id/callCenterFragment">
+
+    <fragment
+        android:id="@+id/callCenterFragment"
+        android:name="com.example.core.presentation.ui.call_center.CallCenterFragment"
+        android:label="CallCenterFragment"
+        tools:layout="@layout/fragment_call_center" />
+</navigation>

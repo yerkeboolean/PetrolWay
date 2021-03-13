@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.core.presentation.ui.map_catalog.MapCatalogViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yandex.mapkit.mapview.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/layoutBottomBehavior"
+            layout="@layout/content_petrols_bottom_sheet"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_24dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            app:layout_dodgeInsetEdges="bottom">
+
+            <ImageView
+                android:id="@+id/ic_zoom_in"
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:src="@drawable/ic_zoom_in" />
+
+            <ImageView
+                android:id="@+id/ic_zoom_out"
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:src="@drawable/ic_zoom_out" />
+
+            <ImageView
+                android:id="@+id/ic_go_current_location"
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:src="@drawable/ic_go_current_location" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_all_petrols"
+            android:layout_width="@dimen/width_160dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/bg_blue_gradient_rounded_r15"
+            android:gravity="center"
+            android:text="Все АЗС"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

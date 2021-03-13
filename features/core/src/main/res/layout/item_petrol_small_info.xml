@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.example.core.presentation.ui.items.PetrolSmallInfoUi" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:paddingBottom="@dimen/padding_10dp">
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_0.3dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+</layout>

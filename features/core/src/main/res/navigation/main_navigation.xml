@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/map_nav">
+
+    <include
+        android:id="@+id/map_nav"
+        app:graph="@navigation/map_navigation" />
+
+    <include
+        android:id="@+id/profile_nav"
+        app:graph="@navigation/profile_navigation" />
+
+    <include
+        android:id="@+id/petrol_nav"
+        app:graph="@navigation/petrol_navigation" />
+    <include
+        android:id="@+id/faq_nav"
+        app:graph="@navigation/faq_navigation" />
+    <include
+        android:id="@+id/call_center_nav"
+        app:graph="@navigation/call_center_navigation" />
+
+</navigation>
